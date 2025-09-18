@@ -1,0 +1,93 @@
+Results:
+
+Explained variance ratio per component:
+[1.90728898e-01 8.70030639e-02 8.15209278e-02 6.43583122e-02
+ 6.16340053e-02 5.57943129e-02 5.05264065e-02 4.64752333e-02
+ 4.40262200e-02 4.17880285e-02 3.76898680e-02 3.45513887e-02
+ 3.19860146e-02 3.00294462e-02 2.93561711e-02 2.62318381e-02
+ 2.54911373e-02 2.20595726e-02 1.49373707e-02 1.27520735e-02
+ 1.10597111e-02 2.04381512e-17 1.76171079e-17 1.26775693e-17
+ 4.48950845e-18 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00]
+
+---------------------
+
+Chi Square Feature Score:
+thal: score=48.19, p-value=0.0000
+
+exang: score=39.12, p-value=0.0000
+
+ca: score=35.74, p-value=0.0000
+
+oldpeak: score=15.89, p-value=0.0032
+
+slope: score=13.53, p-value=0.0089
+
+cp: score=7.99, p-value=0.0919
+
+sex: score=7.51, p-value=0.1112
+
+fbs: score=6.78, p-value=0.1481
+
+restecg: score=6.51, p-value=0.1640
+
+thalach: score=3.19, p-value=0.5258
+
+---------------------
+
+Classification report:
+              precision    recall  f1-score   support
+
+           0       0.88      0.85      0.87        27
+           1       0.89      0.91      0.90        34
+
+    accuracy                           0.89        61
+   macro avg       0.89      0.88      0.88        61
+weighted avg       0.89      0.89      0.88        61
+
+---------------------
+
+Logistic Regression:
+Accuracy: 0.885
+Precision: 0.886
+Recall: 0.912
+F1-score: 0.899
+AUC: 0.938
+
+---------------------
+
+Decision Tree:
+Accuracy = 0.918
+Precision = 0.914
+Recall = 0.941
+F1-score = 0.928
+AUC = 0.915
+
+---------------------
+
+Random Forest:
+Accuracy = 0.918
+Precision = 0.914
+Recall = 0.941
+F1-score = 0.928
+AUC = 0.947
+
+---------------------
+SVM:
+Accuracy = 0.902
+Precision = 0.912
+Recall = 0.912
+F1-score = 0.912
+AUC = 0.959
+
+---------------------
+
+Baseline Accuracy: 0.6
+
+---------------------
+
+Accuracy after GridSearchCV: 0.6166666666666667
+
+---------------------
+
+Accuracy after RandomizedSearchCV: 0.6166666666666667
